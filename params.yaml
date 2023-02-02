@@ -1,0 +1,5 @@
+prepare:
+  dataset: 'shapenet'
+  category: 'car'
+  num_point: 2048
+  var_range: 1.0

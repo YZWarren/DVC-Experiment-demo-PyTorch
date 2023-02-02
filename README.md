@@ -20,21 +20,23 @@ pip install dvc
 3. get dvc extension in vscode
 
 ## Versioning data in remote storage
-1. Start tracking data
-```
-dvc add data
-```
-
-This will create data.dvc file to track and add data into .gitignore, git add & commit data.dvc and .gitignore if want to stage this change
-
-2. Storing data
+1. Set remote storage
 ```
 dvc remote add -d storage <url_to_remote_storage>
 ```
 
 `-d` means set as default remote. See supported `<url_to_remote_storage>` at <https://man.dvc.org/remote>
 
-3. `dvc pull` if need data
+2. Start tracking data
+```
+dvc add data
+```
+
+This will create data.dvc file to track and add data into .gitignore, git add & commit data.dvc and .gitignore if want to stage this change
+
+3. Usage
+`dvc add data` and `dvc push` if made changes to data
+`dvc pull` if need data
 
 ## Defining pipelines
 1. [pipeline structure example](https://dvc.org/doc/user-guide/pipelines/defining-pipelines):

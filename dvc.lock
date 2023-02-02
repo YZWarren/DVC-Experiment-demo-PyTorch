@@ -1,0 +1,24 @@
+schema: '2.0'
+stages:
+  prepare:
+    cmd: python src/prepare/prepare.py
+    deps:
+    - path: data/raw
+      md5: a05374d53eff0a6df7253c32bce8510d.dir
+      size: 201875876
+      nfiles: 5472
+    - path: src/prepare/prepare.py
+      md5: 3d0870fbf13a8bdc50572ce8d0c5a51b
+      size: 2335
+    params:
+      params.yaml:
+        prepare:
+          dataset: shapenet
+          category: car
+          num_point: 2048
+          var_range: 1.0
+    outs:
+    - path: data/clean
+      md5: a721d9e5471c5ddd13b207b2e1242b21.dir
+      size: 89653577
+      nfiles: 2
