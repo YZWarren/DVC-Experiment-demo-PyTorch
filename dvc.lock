@@ -7,9 +7,10 @@ stages:
       md5: a05374d53eff0a6df7253c32bce8510d.dir
       size: 201875876
       nfiles: 5472
-    - path: src/prepare/prepare.py
-      md5: 3d0870fbf13a8bdc50572ce8d0c5a51b
-      size: 2335
+    - path: src/prepare/
+      md5: f15f1dcb986140abd9dce9986be647c8.dir
+      size: 19890
+      nfiles: 4
     params:
       params.yaml:
         prepare:
@@ -17,8 +18,24 @@ stages:
           category: car
           num_point: 2048
           var_range: 1.0
+        train:
+          mode: PointNet
+          dataset:
+            name: shapenet
+            category: car
+            batch_size: 16
+          training:
+            pointnet:
+              init_lr: 0.0001
+              epochs: 301
+              decay_step: 30
+              decay_rate: 0.7
+          logging:
+            name: PointNet_demo
+            pointnet:
+              log_step: 10
     outs:
     - path: data/clean
-      md5: a721d9e5471c5ddd13b207b2e1242b21.dir
+      md5: fad92b3998fe04db54bc71c652dc13a0.dir
       size: 89653577
       nfiles: 2

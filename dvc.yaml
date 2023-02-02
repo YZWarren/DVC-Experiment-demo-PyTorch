@@ -2,13 +2,22 @@ stages:
   prepare:
     cmd: python src/prepare/prepare.py
     deps:
-      - src/prepare/prepare.py
+      - src/prepare/
       - data/raw
     params:
       - params.yaml:
     outs:
       - data/clean
   
+  train:
+    cmd: python src/train/train.py
+    deps:
+      - src/train/
+      - data/clean
+    params:
+      - params.yaml:
+    outs:
+      - reports
   # train:
   #   cmd: i
   #   deps:

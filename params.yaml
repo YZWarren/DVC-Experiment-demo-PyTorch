@@ -3,3 +3,22 @@ prepare:
   category: 'car'
   num_point: 2048
   var_range: 1.0
+train:
+  mode: 'PointNet' # or 'PCA'
+  dataset:
+    name: 'shapenet'
+    category: 'car'
+    batch_size: 16
+  training:
+    pointnet:
+      init_lr: 0.0001
+      epochs: 301
+      decay_step: 30
+      decay_rate: 0.7
+    #PCA:
+      # ...
+      # ...
+  logging:
+    name: 'PointNet_demo'
+    pointnet:
+      log_step: 10
