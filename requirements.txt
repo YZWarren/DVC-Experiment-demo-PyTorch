@@ -4,16 +4,31 @@ dvclive>=1.0
 pyaml
 
 # tools
+imageio
 pandas
 matplotlib
 tqdm
-numpy>=1.22.3
+numpy
 scikit-learn
+scikit-image
 scipy
+opencv-python
+
+# Testing/Linting
+black==22.3.0
+pytest==7.1.1
+pylint==2.13.5
+pytest-cov==3.0.0
+usort
+flake8
+flake8-bugbear
+flake8-comprehensions
 
 git+https://github.com/maxnoe/python-gitpath
+
+# torch
+torchsummary
 
 # 3d
 open3d>=0.15.2
 plotly>=5.6.0
-

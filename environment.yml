@@ -1,0 +1,21 @@
+name: dvc-demo
+channels:
+  - pytorch3d
+  - bottler
+  - iopath
+  - pytorch
+  - conda-forge
+  - anaconda
+  - defaults
+dependencies:
+  - python==3.9
+  - jupyter
+  - pytorch=1.9.1=py3.9_cuda10.2_cudnn7.6.5_0
+  - torchvision
+  - fvcore
+  - iopath
+  - nvidiacub
+  - pytorch3d
+  - pip
+  - pip:
+    - -r requirements.txt
