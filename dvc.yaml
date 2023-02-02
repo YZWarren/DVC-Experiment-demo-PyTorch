@@ -1,16 +1,21 @@
 stages:
-  train:
-    cmd: i
-    deps:
-    - data
-    - src
-    params:
-    - params.yaml:
-    outs:
-    - models
-    metrics:
-    - metrics.json:
-        cache: false
-    plots:
-    - plots:
-        cache: false
+  prepare: ...
+  train: ...
+  evaluate: ...
+
+  
+  # train:
+  #   cmd: i
+  #   deps:
+  #   - data
+  #   - src
+  #   params:
+  #   - params.yaml:
+  #   outs:
+  #   - models
+  #   metrics:
+  #   - metrics.json:
+  #       cache: false
+  #   plots:
+  #   - plots:
+  #       cache: false
