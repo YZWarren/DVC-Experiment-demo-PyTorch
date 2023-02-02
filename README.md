@@ -5,7 +5,9 @@
 ```
 conda create -n dvc python=3.10
 ```
-    or
+
+or
+
 ```
 virtualenv -p python3 .venv
 source .venv/bin/activate
@@ -22,7 +24,8 @@ pip install dvc
 ```
 dvc add data
 ```
-    This will create data.dvc file to track and add data into .gitignore, git add & commit data.dvc and .gitignore if want to stage this change
+
+This will create data.dvc file to track and add data into .gitignore, git add & commit data.dvc and .gitignore if want to stage this change
 
 2. Storing data
 ```
