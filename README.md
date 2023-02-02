@@ -37,7 +37,7 @@ dvc remote add -d storage <url_to_remote_storage>
 3. `dvc pull` if need data
 
 ## Defining pipelines
-1. [pipeline structure example]<https://dvc.org/doc/user-guide/pipelines/defining-pipelines>:
+1. [pipeline structure example](https://dvc.org/doc/user-guide/pipelines/defining-pipelines):
 ```
 stages:
   prepare: ... # stage 1 definition
