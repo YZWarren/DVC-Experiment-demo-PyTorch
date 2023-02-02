@@ -1,5 +1,7 @@
 # DVC experiment with toy Pytorch models
 
+Build environment: `make install`
+
 ## Steps to setup dvc
 1. created virtual environment
 ```
@@ -38,7 +40,7 @@ This will create data.dvc file to track and add data into .gitignore, git add & 
 `dvc add data` and `dvc push` if made changes to data
 `dvc pull` if need data
 
-## Defining pipelines
+## Pipelines
 1. [pipeline structure example](https://dvc.org/doc/user-guide/pipelines/defining-pipelines):
 ```
 stages:
@@ -46,3 +48,4 @@ stages:
   train: ... # stage 2 definition
   evaluate: ... # stage 3 definition
 ```
+2. `dvc repro` to run pipeline
