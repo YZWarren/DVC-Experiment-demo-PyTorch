@@ -24,3 +24,5 @@ dvc remote add -d storage <url_to_remote_storage>
 ```
 
 `-d` means set as default remote. See supported `<url_to_remote_storage>` at <https://man.dvc.org/remote>
+
+3. `dvc pull` if need data
