@@ -5,7 +5,7 @@ Build environment: `make install`
 ## Steps to setup dvc
 1. created virtual environment
 ```
-conda create -n dvc python=3.10
+conda create -n dvc python=3.9
 ```
 
 or
